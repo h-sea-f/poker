@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.oocl.poker.PokerHandsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-16T06:49:45" hostname="ZHA-ITA094-W10" time="0.005">
+  <properties/>
+  <testcase name="should_return_play3_win_when_given_2H_3H" classname="com.oocl.poker.PokerHandsTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
