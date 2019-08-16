@@ -21,7 +21,4 @@ public class PokerHandsTest {
         Assert.assertEquals(result,"play2 win");
     }
 
-    @Test
-    public void should_return_play2_win_
-
 }
