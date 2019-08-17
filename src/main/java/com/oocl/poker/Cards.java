@@ -17,19 +17,31 @@ public class Cards {
     private int calculationLevel(List<Card> cards) {
         boolean isHaveSame = false;
         int sameNumber = 0;
+        int maxSameNumber = 0;
         for (int i = 0; i < this.cards.size(); i++) {
+            int forMaxSameNumber = 0;
             for (int j = i; j < this.cards.size(); j++) {
                 if (i != j) {
                     if (this.cards.get(i).getPosition() == this.cards.get(j).getPosition()) {
+                        forMaxSameNumber++;
                         isHaveSame = true;
                         sameNumber++;
                     }
                 }
             }
+            forMaxSameNumber++;
+            if (forMaxSameNumber > maxSameNumber) {
+                maxSameNumber = forMaxSameNumber;
+            }
         }
         if (!isHaveSame) {
             return 0;
         } else {
+            if (maxSameNumber > sameNumber) {
+                if (maxSameNumber == 3) {
+                    return 3;
+                }
+            }
             return sameNumber;
         }
     }
