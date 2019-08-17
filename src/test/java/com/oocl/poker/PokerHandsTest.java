@@ -168,4 +168,22 @@ public class PokerHandsTest {
         String result = pokerHands.compare(card1, card2);
         Assert.assertEquals("play1 win", result);
     }
+
+    @Test
+    public void should_return_It_ends_in_a_draw_when_given_3H_2H_5H_6H_7H_and_3H_2H_5H_6H_7H() {
+        PokerHands pokerHands = new PokerHands();
+        String card1 = "3H 2H 5H 6H 7H";
+        String card2 = "3H 2H 5H 6H 7H";
+        String result = pokerHands.compare(card1, card2);
+        Assert.assertEquals("It ends in a draw", result);
+    }
+
+    @Test
+    public void should_return_play1_win_when_given_3H_2H_5H_6H_8H_and_3H_2H_5H_6H_7H() {
+        PokerHands pokerHands = new PokerHands();
+        String card1 = "3H 2H 5H 6H 8H";
+        String card2 = "3H 2H 5H 6H 7H";
+        String result = pokerHands.compare(card1, card2);
+        Assert.assertEquals("play1 win", result);
+    }
 }
