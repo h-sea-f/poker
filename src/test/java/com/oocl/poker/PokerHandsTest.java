@@ -123,4 +123,13 @@ public class PokerHandsTest {
         String result = pokerHands.compare(card1, card2);
         Assert.assertEquals("play1 win", result);
     }
+
+    @Test
+    public void should_return_It_ends_in_a_draw_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD() {
+        PokerHands pokerHands = new PokerHands();
+        String card1 = "2H 2D 2S 3C KD";
+        String card2 = "2H 2D 2S 3C KD";
+        String result = pokerHands.compare(card1, card2);
+        Assert.assertEquals("It ends in a draw", result);
+    }
 }
