@@ -103,16 +103,24 @@ public class PokerHands {
         return "It ends in a draw";
     }
 
-    private String level7Compare(Cards play1CardList, Cards play2CardList){
+    private String level7Compare(Cards play1CardList, Cards play2CardList) {
         if (play1CardList.getPointTimesCard(4).getPosition() > play2CardList.getPointTimesCard(4).getPosition()) {
             return "play1 win";
         } else if (play1CardList.getPointTimesCard(4).getPosition() < play2CardList.getPointTimesCard(4).getPosition()) {
             return "play2 win";
         }
-        if (play1CardList.getPointTimesCard(1).getPosition() > play2CardList.getPointTimesCard(1).getPosition()) {
-            return "play1 win";
-        } else if (play1CardList.getPointTimesCard(1).getPosition() < play2CardList.getPointTimesCard(1).getPosition()) {
-            return "play2 win";
+        if (play1CardList.getCards().get(0).getPosition() != play1CardList.getPointTimesCard(4).getPosition()) {
+            if (play1CardList.getCards().get(0).getPosition() > play2CardList.getCards().get(0).getPosition()) {
+                return "play1 win";
+            } else if (play1CardList.getCards().get(0).getPosition() > play2CardList.getCards().get(0).getPosition()) {
+                return "play2 win";
+            }
+        } else {
+            if (play1CardList.getCards().get(4).getPosition() > play2CardList.getCards().get(4).getPosition()) {
+                return "play1 win";
+            } else if (play1CardList.getCards().get(4).getPosition() > play2CardList.getCards().get(4).getPosition()) {
+                return "play2 win";
+            }
         }
         return "It ends in a draw";
     }

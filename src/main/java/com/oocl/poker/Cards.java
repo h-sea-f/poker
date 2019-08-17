@@ -66,7 +66,6 @@ public class Cards {
                 return 6;
             }
             if(maxSameNumber == 4){
-                System.out.println("7");
                 return 7;
             }
             return sameNumber;
@@ -92,12 +91,11 @@ public class Cards {
     public Card getPointTimesCard(int pointTimes) {
         for (int i = 0; i < this.cards.size(); i++) {
             int times = 0;
-            for (int j = i + 1; j < this.cards.size(); j++) {
+            for (int j = i ; j < this.cards.size(); j++) {
                 if (this.cards.get(i).getPosition() == this.cards.get(j).getPosition()) {
                     times++;
                 }
             }
-            times++;
             if(times == pointTimes){
                 return this.cards.get(i);
             }
