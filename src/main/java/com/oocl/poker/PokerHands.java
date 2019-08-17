@@ -40,6 +40,10 @@ public class PokerHands {
             return level7Compare(play1CardList, play2CardList);
         }
 
+        if (play1CardList.getLevel() == play2CardList.getLevel() && play1CardList.getLevel() == 8) {
+            return level8Compare(play1CardList, play2CardList);
+        }
+
         if (play1CardList.getLevel() > play2CardList.getLevel()) {
             return "play1 win";
         }
@@ -123,5 +127,9 @@ public class PokerHands {
             }
         }
         return "It ends in a draw";
+    }
+
+    private String level8Compare(Cards play1CardList, Cards play2CardList) {
+        return level0Compare(play1CardList, play2CardList);
     }
 }
