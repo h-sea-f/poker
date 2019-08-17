@@ -1,5 +1,6 @@
 package com.oocl.poker;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -32,6 +33,22 @@ public class Cards {
             System.out.println(sameNumber);
             return sameNumber;
         }
+    }
+
+    public List<Card> getSameCardList() {
+        List<Card> result = new ArrayList<>();
+        for (int i = 0; i < this.cards.size(); i++) {
+            for (int j = i; j < this.cards.size(); j++) {
+                if (i != j) {
+                    if (this.cards.get(i).getPosition() == this.cards.get(j).getPosition()) {
+                        if (!result.contains(this.cards.get(i))) {
+                            result.add(this.cards.get(i));
+                        }
+                    }
+                }
+            }
+        }
+        return result;
     }
 
     public List<Card> getCards() {
