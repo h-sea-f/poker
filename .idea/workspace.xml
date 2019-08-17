@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e4f85c7-29e8-42bb-a4b0-fb24e009ab87" name="Default Changelist" comment="finish should_return_play2_win_when_given_3H_4H_5H_6H_7H_and_3H_3D_3S_4C_3D&#10; test and implement">
+    <list default="true" id="7e4f85c7-29e8-42bb-a4b0-fb24e009ab87" name="Default Changelist" comment="finish should_return_It_ends_in_a_draw_when_given_3H_3D_3S_5C_3D_and_3H_3D_3S_5C_3D&#10; test and implement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oocl/poker/PokerHands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oocl/poker/PokerHands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/oocl/poker/PokerHandsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/oocl/poker/PokerHandsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -78,8 +77,8 @@
       <file leaf-file-name="PokerHandsTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/oocl/poker/PokerHandsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="249" column="46" selection-start-line="249" selection-start-column="46" selection-end-line="249" selection-end-column="46" />
+            <state relative-caret-position="140">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -587,7 +586,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PokerHandsTest.should_return_It_ends_in_a_draw_when_given_3H_3D_3S_5C_3D_and_3H_3D_3S_5C_3D">
+  <component name="RunManager" selected="JUnit.PokerHandsTest">
     <configuration name="PokerHandsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.oocl.poker.poker.test" />
       <extension name="coverage">
@@ -712,8 +711,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PokerHandsTest.should_return_It_ends_in_a_draw_when_given_3H_3D_3S_5C_3D_and_3H_3D_3S_5C_3D" />
         <item itemvalue="JUnit.PokerHandsTest" />
+        <item itemvalue="JUnit.PokerHandsTest.should_return_It_ends_in_a_draw_when_given_3H_3D_3S_5C_3D_and_3H_3D_3S_5C_3D" />
         <item itemvalue="JUnit.PokerHandsTest.should_return_It_ends_in_a_draw_when_given_3H_4H_5H_6H_7H_and_3H_4H_5H_6H_7H" />
         <item itemvalue="JUnit.PokerHandsTest.should_return_play2_win_when_given_3H_4H_5H_6H_7H_and_4H_5H_6H_7H_8H" />
         <item itemvalue="JUnit.PokerHandsTest.should_return_play2_win_when_given_3H_4H_5H_6H_7H_and_3H_3D_3S_4C_3D" />
@@ -731,7 +730,7 @@
       <option name="presentableId" value="Default" />
       <updated>1565935653898</updated>
       <workItem from="1565935659033" duration="3629000" />
-      <workItem from="1566024836513" duration="24296000" />
+      <workItem from="1566024836513" duration="24347000" />
     </task>
     <task id="LOCAL-00001" summary="refactor should_return_play2_win_given_2H_3H test and implement">
       <created>1566031319976</created>
@@ -908,13 +907,17 @@
       <option name="project" value="LOCAL" />
       <updated>1566058770669</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="finish should_return_It_ends_in_a_draw_when_given_3H_3D_3S_5C_3D_and_3H_3D_3S_5C_3D&#10; test and implement">
+      <created>1566059125634</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1566059125634</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PokerHandsTest - 2019.08.18 at 00h 12m 21s.xml">
-      <configuration name="PokerHandsTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PokerHandsTest_should_return_play2_win_when_given_3H_4H_5H_6H_7H_and_3H_3D_3S_4C_3D - 2019.08.18 at 00h 15m 01s.xml">
       <configuration name="PokerHandsTest.should_return_play2_win_when_given_3H_4H_5H_6H_7H_and_3H_3D_3S_4C_3D" configurationId="JUnit" />
     </history-entry>
@@ -942,9 +945,12 @@
     <history-entry file="PokerHandsTest - 2019.08.18 at 00h 23m 28s.xml">
       <configuration name="PokerHandsTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PokerHandsTest_should_return_It_ends_in_a_draw_when_given_3H_3D_3S_5C_3D_and_3H_3D_3S_5C_3D - 2019.08.18 at 00h 24m 59s.xml">
+      <configuration name="PokerHandsTest.should_return_It_ends_in_a_draw_when_given_3H_3D_3S_5C_3D_and_3H_3D_3S_5C_3D" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27925000" />
+    <option name="totallyTimeSpent" value="27976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -960,7 +966,7 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23140496" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3090909" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.105785124" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -991,7 +997,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor should_return_play2_win_given_2H_3H test and implement" />
     <MESSAGE value="finish should_return_It_ends_in_a_draw_when_given_2H_2H" />
     <MESSAGE value="finish should_return_play2_win_when_given_2H_3D_5S_9C_KD_and_2H_3D_5S_9C_AD&#10;test and implement" />
     <MESSAGE value="refactor should_return_play2_win_when_given_2H_3D_5S_9C_KD_and_2H_3D_5S_9C_AD&#10; implement" />
@@ -1016,7 +1021,8 @@
     <MESSAGE value="finish should_return_play2_win_when_given_3H_3D_3S_5C_3D_and_4H_4D_4S_4C_3D test and implement" />
     <MESSAGE value="finish should_return_play2_win_when_given_3H_3D_3S_5C_3D_and_3H_3D_3S_4C_3D test and implement" />
     <MESSAGE value="finish should_return_play2_win_when_given_3H_4H_5H_6H_7H_and_3H_3D_3S_4C_3D&#10; test and implement" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish should_return_play2_win_when_given_3H_4H_5H_6H_7H_and_3H_3D_3S_4C_3D&#10; test and implement" />
+    <MESSAGE value="finish should_return_It_ends_in_a_draw_when_given_3H_3D_3S_5C_3D_and_3H_3D_3S_5C_3D&#10; test and implement" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish should_return_It_ends_in_a_draw_when_given_3H_3D_3S_5C_3D_and_3H_3D_3S_5C_3D&#10; test and implement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1172,8 +1178,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/oocl/poker/PokerHandsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="249" column="46" selection-start-line="249" selection-start-column="46" selection-end-line="249" selection-end-column="46" />
+        <state relative-caret-position="140">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

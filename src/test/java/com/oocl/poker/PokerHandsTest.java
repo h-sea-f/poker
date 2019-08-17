@@ -3,9 +3,6 @@ package com.oocl.poker;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class PokerHandsTest {
     @Test
     public void should_return_play2_win_when_given_2H_3H() {
