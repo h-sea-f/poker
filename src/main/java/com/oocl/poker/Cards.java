@@ -16,10 +16,16 @@ public class Cards {
 
     private int calculationLevel(List<Card> cards) {
         boolean isHaveSame = false;
+        boolean isOrder = true;
         int sameNumber = 0;
         int maxSameNumber = 0;
         for (int i = 0; i < this.cards.size(); i++) {
             int forMaxSameNumber = 0;
+            if (i > 0) {
+                if (this.cards.get(i).getPosition() != this.cards.get(i - 1).getPosition() + 1) {
+                    isOrder = false;
+                }
+            }
             for (int j = i; j < this.cards.size(); j++) {
                 if (i != j) {
                     if (this.cards.get(i).getPosition() == this.cards.get(j).getPosition()) {
@@ -35,7 +41,14 @@ public class Cards {
             }
         }
         if (!isHaveSame) {
-            return 0;
+            if (this.cards.size() == 1) {
+                return 0;
+            }
+            if (!isOrder) {
+                return 0;
+            } else {
+                return 4;
+            }
         } else {
             if (maxSameNumber > sameNumber) {
                 if (maxSameNumber == 3) {

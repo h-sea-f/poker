@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e4f85c7-29e8-42bb-a4b0-fb24e009ab87" name="Default Changelist" comment="finish should_return_It_ends_in_a_draw_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD test">
+    <list default="true" id="7e4f85c7-29e8-42bb-a4b0-fb24e009ab87" name="Default Changelist" comment="finish should_return_play1_win_when_given_2H_2D_2S_3C_AD_and_2H_2D_2S_3C_KD test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/oocl/poker/Cards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oocl/poker/Cards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/oocl/poker/PokerHandsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/oocl/poker/PokerHandsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,7 +50,7 @@
       <file leaf-file-name="PokerHands.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/oocl/poker/PokerHands.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="1750">
               <caret line="71" column="75" selection-start-line="71" selection-start-column="75" selection-end-line="71" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -58,27 +59,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cards.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Cards.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/oocl/poker/Cards.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            <state relative-caret-position="754">
+              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
-                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#2262#2263#0" expanded="true" />
+                <element signature="e#2290#2291#0" expanded="true" />
+                <element signature="e#2319#2320#0" expanded="true" />
+                <element signature="e#2347#2348#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PokerHandsTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PokerHandsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/oocl/poker/PokerHandsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="141" column="38" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
+            <state relative-caret-position="4480">
+              <caret line="146" column="21" lean-forward="true" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -443,9 +444,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/oocl/poker/tasking.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/oocl/poker/Card.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oocl/poker/CardsLevel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/oocl/poker/Cards.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oocl/poker/PokerHands.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/oocl/poker/PokerHandsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oocl/poker/Cards.java" />
       </list>
     </option>
   </component>
@@ -648,7 +649,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="PokerHandsTest.should_return_play2_win_when_given_2H_2D_3S_3C_KD_and_2H_2D_2S_3C_AD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PokerHandsTest.should_return_play1_win_when_given_2H_3D_4S_5C_6D_and_2H_2D_2S_3C_KD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.oocl.poker.poker.test" />
       <extension name="coverage">
         <pattern>
@@ -660,7 +661,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.oocl.poker" />
       <option name="MAIN_CLASS_NAME" value="com.oocl.poker.PokerHandsTest" />
-      <option name="METHOD_NAME" value="should_return_play2_win_when_given_2H_2D_3S_3C_KD_and_2H_2D_2S_3C_AD" />
+      <option name="METHOD_NAME" value="should_return_play1_win_when_given_2H_3D_4S_5C_6D_and_2H_2D_2S_3C_KD" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -673,18 +674,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.PokerHandsTest" />
-      <item itemvalue="JUnit.PokerHandsTest.should_return_play2_win_when_given_2H_2D_3S_3C_KD_and_2H_2D_2S_3C_AD" />
       <item itemvalue="JUnit.PokerHandsTest.should_return_It_ends_in_a_draw_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD" />
       <item itemvalue="JUnit.PokerHandsTest.should_return_play1_win_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD" />
       <item itemvalue="JUnit.PokerHandsTest.should_return_play1_win_when_given_2H_2D_2S_3C_AD_and_2H_2D_2S_3C_KD" />
+      <item itemvalue="JUnit.PokerHandsTest.should_return_play1_win_when_given_2H_3D_4S_5C_6D_and_2H_2D_2S_3C_KD" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PokerHandsTest" />
+        <item itemvalue="JUnit.PokerHandsTest.should_return_play1_win_when_given_2H_3D_4S_5C_6D_and_2H_2D_2S_3C_KD" />
         <item itemvalue="JUnit.PokerHandsTest.should_return_play1_win_when_given_2H_2D_2S_3C_AD_and_2H_2D_2S_3C_KD" />
         <item itemvalue="JUnit.PokerHandsTest.should_return_It_ends_in_a_draw_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD" />
         <item itemvalue="JUnit.PokerHandsTest.should_return_play1_win_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD" />
-        <item itemvalue="JUnit.PokerHandsTest.should_return_play2_win_when_given_2H_2D_3S_3C_KD_and_2H_2D_2S_3C_AD" />
       </list>
     </recent_temporary>
   </component>
@@ -699,7 +700,7 @@
       <option name="presentableId" value="Default" />
       <updated>1565935653898</updated>
       <workItem from="1565935659033" duration="3629000" />
-      <workItem from="1566024836513" duration="15150000" />
+      <workItem from="1566024836513" duration="16096000" />
     </task>
     <task id="LOCAL-00001" summary="refactor should_return_play2_win_given_2H_3H test and implement">
       <created>1566031319976</created>
@@ -785,22 +786,17 @@
       <option name="project" value="LOCAL" />
       <updated>1566047698507</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="finish should_return_play1_win_when_given_2H_2D_2S_3C_AD_and_2H_2D_2S_3C_KD test">
+      <created>1566047773931</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1566047773931</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PokerHandsTest_should_return_It_ends_in_a_draw_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD - 2019.08.17 at 21h 05m 24s.xml">
-      <configuration name="PokerHandsTest.should_return_It_ends_in_a_draw_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokerHandsTest_should_return_play1_win_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD - 2019.08.17 at 21h 05m 57s.xml">
-      <configuration name="PokerHandsTest.should_return_play1_win_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokerHandsTest_should_return_play1_win_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD - 2019.08.17 at 21h 07m 24s.xml">
-      <configuration name="PokerHandsTest.should_return_play1_win_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PokerHandsTest - 2019.08.17 at 21h 08m 09s.xml">
-      <configuration name="PokerHandsTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PokerHandsTest - 2019.08.17 at 21h 10m 12s.xml">
       <configuration name="PokerHandsTest" configurationId="JUnit" />
     </history-entry>
@@ -819,9 +815,21 @@
     <history-entry file="PokerHandsTest - 2019.08.17 at 21h 14m 09s.xml">
       <configuration name="PokerHandsTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PokerHandsTest_should_return_play1_win_when_given_2H_2D_2S_3C_AD_and_2H_2D_2S_3C_KD - 2019.08.17 at 21h 15m 41s.xml">
+      <configuration name="PokerHandsTest.should_return_play1_win_when_given_2H_2D_2S_3C_AD_and_2H_2D_2S_3C_KD" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerHandsTest - 2019.08.17 at 21h 15m 47s.xml">
+      <configuration name="PokerHandsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerHandsTest_should_return_play1_win_when_given_2H_3D_4S_5C_6D_and_2H_2D_2S_3C_KD - 2019.08.17 at 21h 26m 49s.xml">
+      <configuration name="PokerHandsTest.should_return_play1_win_when_given_2H_3D_4S_5C_6D_and_2H_2D_2S_3C_KD" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PokerHandsTest - 2019.08.17 at 21h 27m 03s.xml">
+      <configuration name="PokerHandsTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18779000" />
+    <option name="totallyTimeSpent" value="19725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -837,8 +845,8 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2016529" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.13884297" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21157025" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.105785124" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22919819" />
@@ -880,7 +888,8 @@
     <MESSAGE value="finish should_return_play2_win_when_given_2H_2D_3S_3C_KD_and_2H_2D_2S_3C_AD test and implement" />
     <MESSAGE value="finish should_return_play1_win_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD test and implement" />
     <MESSAGE value="finish should_return_It_ends_in_a_draw_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD test" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish should_return_It_ends_in_a_draw_when_given_2H_2D_2S_3C_KD_and_2H_2D_2S_3C_KD test" />
+    <MESSAGE value="finish should_return_play1_win_when_given_2H_2D_2S_3C_AD_and_2H_2D_2S_3C_KD test" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish should_return_play1_win_when_given_2H_2D_2S_3C_AD_and_2H_2D_2S_3C_KD test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -942,13 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/oocl/poker/tasking.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -985,23 +987,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/oocl/poker/Cards.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/oocl/poker/tasking.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        <state relative-caret-position="315">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/oocl/poker/PokerHandsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4480">
+          <caret line="146" column="21" lean-forward="true" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oocl/poker/PokerHands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="1750">
           <caret line="71" column="75" selection-start-line="71" selection-start-column="75" selection-end-line="71" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1009,12 +1014,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/oocl/poker/PokerHandsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oocl/poker/Cards.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="141" column="38" selection-start-line="141" selection-start-column="38" selection-end-line="141" selection-end-column="38" />
+        <state relative-caret-position="754">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2262#2263#0" expanded="true" />
+            <element signature="e#2290#2291#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+            <element signature="e#2347#2348#0" expanded="true" />
           </folding>
         </state>
       </provider>
