@@ -51,7 +51,6 @@ public class Cards {
             if (isSameShape) {
                 return 5;
             }
-
             if (!isOrder) {
                 return 0;
             } else {
@@ -65,6 +64,10 @@ public class Cards {
             }
             if (maxSameNumber == 3 && sameNumber == 4) {
                 return 6;
+            }
+            if(maxSameNumber == 4){
+                System.out.println("7");
+                return 7;
             }
             return sameNumber;
         }
