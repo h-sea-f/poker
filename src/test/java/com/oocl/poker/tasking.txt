@@ -1,0 +1,3 @@
+tasking1:
+    input:"2H","3H"
+    output:"play2 win"
