@@ -24,6 +24,10 @@ public class PokerHands {
             return level3Compare(play1CardList, play2CardList);
         }
 
+        if (play1CardList.getLevel() == play2CardList.getLevel() && play1CardList.getLevel() == 4) {
+            return level0Compare(play1CardList,play2CardList);
+        }
+
         if (play1CardList.getLevel() > play2CardList.getLevel()) {
             return "play1 win";
         }
