@@ -58,7 +58,7 @@ public class PokerHands {
                 return "play2 win";
             }
         }
-        return "It ends in a draw";
+        return levle0Compare(play1CardList,play2CardList);
     }
 
     private String levle2Compare(Cards play1CardList, Cards play2CardList) {
