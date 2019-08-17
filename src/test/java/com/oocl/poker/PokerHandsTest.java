@@ -35,11 +35,20 @@ public class PokerHandsTest {
     }
 
     @Test
-    public void should_return_play2_win_when_given_2H_3D_5S_9C_KD_and_2H_3D_5S_9C_KD(){
+    public void should_return_It_ends_in_a_draw_when_given_2H_3D_5S_9C_KD_and_2H_3D_5S_9C_KD(){
         PokerHands pokerHands = new PokerHands();
         String card1 = "2H 3D 5S 9C KD";
         String card2 = "2H 3D 5S 9C KD";
         String result = pokerHands.compare(card1,card2);
         Assert.assertEquals(result,"It ends in a draw");
+    }
+
+    @Test
+    public void should_return_play2_win_when_given_2H_3D_5S_9C_KD_and_2H_2D_5S_9C_KD(){
+        PokerHands pokerHands = new PokerHands();
+        String card1 = "2H 3D 5S 9C KD";
+        String card2 = "2H 2D 5S 9C KD";
+        String result = pokerHands.compare(card1,card2);
+        Assert.assertEquals(result,"play2 win");
     }
 }

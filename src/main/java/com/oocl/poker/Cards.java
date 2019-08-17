@@ -10,24 +10,27 @@ public class Cards {
     public Cards(List<Card> cards) {
         this.cards = cards;
         Collections.sort(this.cards);
-        this.level = calculationLevel(this.cards);
+        this.level = this.calculationLevel(this.cards);
     }
 
     private int calculationLevel(List<Card> cards) {
         boolean isHaveSame = false;
+        int sameNumber = 0;
         for (int i = 0; i < this.cards.size(); i++) {
-            for (int j = 0; j < this.cards.size(); j++) {
+            for (int j = i; j < this.cards.size(); j++) {
                 if (i != j) {
-                    if (this.cards.get(i) == this.cards.get(j)) {
+                    if (this.cards.get(i).getPosition() == this.cards.get(j).getPosition()) {
                         isHaveSame = true;
+                        sameNumber++;
                     }
                 }
             }
         }
         if (!isHaveSame) {
-            return 1;
+            return 0;
         } else {
-            return 2;
+            System.out.println(sameNumber);
+            return sameNumber;
         }
     }
 

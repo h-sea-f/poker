@@ -6,7 +6,6 @@ import java.util.List;
 
 public class PokerHands {
     public String compare(String play1Card, String play2Card) {
-
         Cards play1CardList = constructCards(play1Card);
         Cards play2CardList = constructCards(play2Card);
         if (play1CardList.getLevel() == play2CardList.getLevel()) {
@@ -18,16 +17,13 @@ public class PokerHands {
                 }
             }
         }
+        if (play1CardList.getLevel() > play2CardList.getLevel()) {
+            return "play1 win";
+        }
+        if (play1CardList.getLevel() < play2CardList.getLevel()) {
+            return "play2 win";
+        }
         return "It ends in a draw";
-//        Card card1 = new Card(play1Card);
-//        Card card2 = new Card(play2Card);
-//        if (card1.getPosition() > card2.getPosition()) {
-//            return "play1 win";
-//        } else if (card1.getPosition() < card2.getPosition()) {
-//            return "play2 win";
-//        } else {
-//            return "It ends in a draw";
-//        }
     }
 
     private Cards constructCards(String handCards) {
