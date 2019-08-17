@@ -25,11 +25,15 @@ public class PokerHands {
         }
 
         if (play1CardList.getLevel() == play2CardList.getLevel() && play1CardList.getLevel() == 4) {
-            return level0Compare(play1CardList,play2CardList);
+            return level0Compare(play1CardList, play2CardList);
         }
 
         if (play1CardList.getLevel() == play2CardList.getLevel() && play1CardList.getLevel() == 5) {
-            return level0Compare(play1CardList,play2CardList);
+            return level0Compare(play1CardList, play2CardList);
+        }
+
+        if (play1CardList.getLevel() == play2CardList.getLevel() && play1CardList.getLevel() == 6) {
+            return level6Compare(play1CardList, play2CardList);
         }
 
         if (play1CardList.getLevel() > play2CardList.getLevel()) {
@@ -70,14 +74,28 @@ public class PokerHands {
                 return "play2 win";
             }
         }
-        return level0Compare(play1CardList,play2CardList);
+        return level0Compare(play1CardList, play2CardList);
     }
 
     private String level2Compare(Cards play1CardList, Cards play2CardList) {
         return level1Compare(play1CardList, play2CardList);
     }
 
-    private String level3Compare(Cards play1CardList, Cards play2CardList){
-        return level1Compare(play1CardList,play2CardList);
+    private String level3Compare(Cards play1CardList, Cards play2CardList) {
+        return level1Compare(play1CardList, play2CardList);
+    }
+
+    private String level6Compare(Cards play1CardList, Cards play2CardList) {
+        if (play1CardList.getPointTimesCard(3).getPosition() > play2CardList.getPointTimesCard(3).getPosition()) {
+            return "play1 win";
+        } else if(play1CardList.getPointTimesCard(3).getPosition() < play2CardList.getPointTimesCard(3).getPosition()){
+            return "play2 win";
+        }
+        if (play1CardList.getPointTimesCard(2).getPosition() > play2CardList.getPointTimesCard(2).getPosition()) {
+            return "play1 win";
+        } else if(play1CardList.getPointTimesCard(2).getPosition() < play2CardList.getPointTimesCard(2).getPosition()){
+            return "play2 win";
+        }
+        return "It ends in a draw";
     }
 }
