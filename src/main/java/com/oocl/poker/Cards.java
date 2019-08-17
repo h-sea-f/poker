@@ -48,6 +48,9 @@ public class Cards {
             if (this.cards.size() == 1) {
                 return 0;
             }
+            if (isOrder && isSameShape) {
+                return 8;
+            }
             if (isSameShape) {
                 return 5;
             }
@@ -65,7 +68,7 @@ public class Cards {
             if (maxSameNumber == 3 && sameNumber == 4) {
                 return 6;
             }
-            if(maxSameNumber == 4){
+            if (maxSameNumber == 4) {
                 return 7;
             }
             return sameNumber;
@@ -91,12 +94,12 @@ public class Cards {
     public Card getPointTimesCard(int pointTimes) {
         for (int i = 0; i < this.cards.size(); i++) {
             int times = 0;
-            for (int j = i ; j < this.cards.size(); j++) {
+            for (int j = i; j < this.cards.size(); j++) {
                 if (this.cards.get(i).getPosition() == this.cards.get(j).getPosition()) {
                     times++;
                 }
             }
-            if(times == pointTimes){
+            if (times == pointTimes) {
                 return this.cards.get(i);
             }
         }

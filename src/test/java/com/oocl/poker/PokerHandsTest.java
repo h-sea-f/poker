@@ -240,4 +240,13 @@ public class PokerHandsTest {
         String result = pokerHands.compare(card1, card2);
         Assert.assertEquals("play1 win", result);
     }
+
+    @Test
+    public void should_return_play2_win_when_given_3H_4H_5H_6H_7H_and_3H_3D_3S_4C_3D() {
+        PokerHands pokerHands = new PokerHands();
+        String card1 = "3H 4H 5H 6H 7H";
+        String card2 = "3H 3D 3S 4C 3D";
+        String result = pokerHands.compare(card1, card2);
+        Assert.assertEquals("play1 win", result);
+    }
 }
