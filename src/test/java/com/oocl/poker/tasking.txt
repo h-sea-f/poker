@@ -1,3 +1,7 @@
 tasking1:
     input:"2H","3H"
     output:"play2 win"
+
+tasking2:
+    input:"2H","2H"
+    output:"It ends in a draw"
