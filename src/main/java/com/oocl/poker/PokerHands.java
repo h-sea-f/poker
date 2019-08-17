@@ -16,6 +16,10 @@ public class PokerHands {
             return levle1Compare(play1CardList, play2CardList);
         }
 
+        if (play1CardList.getLevel() == play2CardList.getLevel() && play1CardList.getLevel() == 2) {
+            return levle2Compare(play1CardList, play2CardList);
+        }
+
         if (play1CardList.getLevel() > play2CardList.getLevel()) {
             return "play1 win";
         }
@@ -50,10 +54,14 @@ public class PokerHands {
         for (int i = play1CardList.getSameCardList().size() - 1; i >= 0; i--) {
             if (play1CardList.getSameCardList().get(i).getPosition() > play2CardList.getSameCardList().get(i).getPosition()) {
                 return "play1 win";
-            } else {
+            } else if (play1CardList.getSameCardList().get(i).getPosition() < play2CardList.getSameCardList().get(i).getPosition()) {
                 return "play2 win";
             }
         }
         return "It ends in a draw";
+    }
+
+    private String levle2Compare(Cards play1CardList, Cards play2CardList) {
+        return levle1Compare(play1CardList, play2CardList);
     }
 }

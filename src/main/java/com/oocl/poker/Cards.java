@@ -30,7 +30,6 @@ public class Cards {
         if (!isHaveSame) {
             return 0;
         } else {
-            System.out.println(sameNumber);
             return sameNumber;
         }
     }
