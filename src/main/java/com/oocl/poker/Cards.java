@@ -26,7 +26,7 @@ public class Cards {
                 if (this.cards.get(i).getPosition() != this.cards.get(i - 1).getPosition() + 1) {
                     isOrder = false;
                 }
-                if(this.cards.get(i).getShape()!= this.cards.get(i-1).getShape()){
+                if (this.cards.get(i).getShape() != this.cards.get(i - 1).getShape()) {
                     isSameShape = false;
                 }
             }
@@ -48,7 +48,9 @@ public class Cards {
             if (this.cards.size() == 1) {
                 return 0;
             }
-            if(isSameShape){return 5;}
+            if (isSameShape) {
+                return 5;
+            }
 
             if (!isOrder) {
                 return 0;
@@ -60,6 +62,9 @@ public class Cards {
                 if (maxSameNumber == 3) {
                     return 3;
                 }
+            }
+            if (maxSameNumber == 3 && sameNumber == 4){
+                return 6;
             }
             return sameNumber;
         }
