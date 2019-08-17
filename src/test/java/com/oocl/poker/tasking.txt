@@ -5,3 +5,7 @@ tasking1:
 tasking2:
     input:"2H","2H"
     output:"It ends in a draw"
+
+tasking3:
+    input: "2H 3D 5S 9C KD","2H 3D 5S 9C AD"
+    output:"play2 win"

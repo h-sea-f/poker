@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Card {
+public class Card implements Comparable<Card> {
     private char number;
     private char shape;
     private int position;
@@ -16,7 +16,20 @@ public class Card {
         this.position = order.indexOf(brand.charAt(0));
     }
 
+    public char getNumber() {
+        return number;
+    }
+
+    public char getShape() {
+        return shape;
+    }
+
     public int getPosition() {
         return position;
+    }
+
+    @Override
+    public int compareTo(Card card) {
+        return this.position-card.getPosition();
     }
 }
