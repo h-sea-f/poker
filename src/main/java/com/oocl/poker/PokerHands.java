@@ -10,10 +10,10 @@ public class PokerHands {
         Cards play1CardList = constructCards(play1Card);
         Cards play2CardList = constructCards(play2Card);
         if (play1CardList.getLevel() == play2CardList.getLevel()) {
-            for (int i = 0; i < play1CardList.getCards().size(); i++) {
-                if (play1CardList.getCards().get(i).getPosition() > play2CardList.getCards().get(i).getPosition()){
+            for (int i = play1CardList.getCards().size() - 1; i >= 0; i--) {
+                if (play1CardList.getCards().get(i).getPosition() > play2CardList.getCards().get(i).getPosition()) {
                     return "play1 win";
-                } else if (play1CardList.getCards().get(i).getPosition() < play2CardList.getCards().get(i).getPosition()){
+                } else if (play1CardList.getCards().get(i).getPosition() < play2CardList.getCards().get(i).getPosition()) {
                     return "play2 win";
                 }
             }
