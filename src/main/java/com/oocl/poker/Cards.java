@@ -17,6 +17,7 @@ public class Cards {
     private int calculationLevel(List<Card> cards) {
         boolean isHaveSame = false;
         boolean isOrder = true;
+        boolean isSameShape = true;
         int sameNumber = 0;
         int maxSameNumber = 0;
         for (int i = 0; i < this.cards.size(); i++) {
@@ -24,6 +25,9 @@ public class Cards {
             if (i > 0) {
                 if (this.cards.get(i).getPosition() != this.cards.get(i - 1).getPosition() + 1) {
                     isOrder = false;
+                }
+                if(this.cards.get(i).getShape()!= this.cards.get(i-1).getShape()){
+                    isSameShape = false;
                 }
             }
             for (int j = i; j < this.cards.size(); j++) {
@@ -44,6 +48,8 @@ public class Cards {
             if (this.cards.size() == 1) {
                 return 0;
             }
+            if(isSameShape){return 5;}
+
             if (!isOrder) {
                 return 0;
             } else {
