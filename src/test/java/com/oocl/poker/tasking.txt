@@ -9,3 +9,115 @@ tasking2:
 tasking3:
     input: "2H 3D 5S 9C KD","2H 3D 5S 9C AD"
     output:"play2 win"
+
+tasking4:
+    input:"2H 3D 5S 9C KD","2H 3D 5S 9C AD"
+    output:"play2 win"
+
+tasking5:
+    input:"2H 3D 5S 9C KD" "2H 3D 5S 9C KD"
+    output:"It ends in a draw"
+
+tasking6:
+    input:"2H 3D 5S 9C KD" "2H 2D 5S 9C KD"
+    output:"play2 win"
+
+tasking7:
+    input:"2H 2D 5S 9C KD" "3H 3D 5S 9C KD"
+    output:"play2 win"
+
+tasking8:
+    input:"2H 2D 5S 9C KD" "3H 3D 4S 4C KD"
+    output:"play2 win"
+
+tasking9:
+    input:"2H 2D 3S 3C KD" "3H 3D 4S 4C KD"
+    output:"play2 win"
+
+tasking10:
+    input:"2H 2D 5S 9C KD" "2H 2D 5S 9C KD"
+    output:"It ends in a draw"
+
+tasking11:
+    input:"2H 2D 3S 3C KD" "2H 2D 3S 3C KD"
+    output:"It ends in a draw"
+
+tasking12:
+    input:"2H 2D 3S 3C KD" "2H 2D 3S 3C AD"
+    output:"play2 win"
+
+tasking13:
+    input:"2H 2D 3S 3C KD" "2H 2D 2S 3C AD"
+    output:"play2 win"
+
+tasking14:
+    input:"2H 2D 2S 3C KD" "2H 2D 2S 3C KD"
+    output:"play1 win"
+
+tasking15:
+    input:"2H 2D 2S 3C KD" "2H 2D 2S 3C KD"
+    output:"It ends in a draw"
+
+tasking16:
+    input:"2H 2D 2S 3C AD" "2H 2D 2S 3C KD"
+    output:"play1 win"
+
+tasking17:
+    input:"2H 3D 4S 5C 6D" "2H 3D 4S 5C 6D"
+    output:"It ends in a draw"
+
+tasking18:
+    input:"3H 4D 5S 6C 7D" "2H 3D 4S 5C 6D"
+    output:"play1 win"
+
+tasking19:
+    input:"3H 2H 5H 6H 7H" "2H 3D 4S 5C 6D"
+    output:"play1 win"
+
+tasking20:
+    input:"3H 2H 5H 6H 7H" "3H 2H 5H 6H 7H"
+    output:"It ends in a draw"
+
+tasking21:
+    input:"3H 2H 5H 6H 8H" "3H 2H 5H 6H 7H"
+    output:"play1 win"
+
+tasking22:
+    input:"3H 3D 5S 5C 3D" "3H 2H 5H 6H 7H"
+    output:"play1 win"
+
+tasking23:
+    input:"4H 4D 5S 5C 4D" "3H 3D 5S 5C 3D"
+    output:"play1 win"
+
+tasking24:
+    input:"4H 4D 5S 5C 4D" "3H 3D 4S 4C 3D"
+    output:"play1 win"
+
+tasking25:
+    input:"3H 3D 3S 5C 3D" "3H 3D 4S 4C 3D"
+    output:"play1 win"
+
+tasking26:
+    input:"3H 3D 3S 5C 3D" "4H 4D 4S 4C 3D"
+    output:"play2 win"
+
+tasking27:
+    input:"3H 3D 3S 5C 3D" "3H 3D 3S 4C 3D"
+    output:"play2 win"
+
+tasking28:
+    input:"3H 3D 3S 5C 3D" "3H 3D 3S 5C 3D"
+    output:"It ends in a draw"
+
+tasking29:
+    input:"3H 4H 5H 6H 7H" "3H 3D 3S 4C 3D"
+    output:"play1 win"
+
+tasking30:
+    input:"3H 4H 5H 6H 7H" "4H 5H 6H 7H 8H"
+    output:"play2 win"
+
+tasking31:
+    input:"3H 4H 5H 6H 7H" "3H 4H 5H 6H 7H"
+    output:"It ends in a draw"
